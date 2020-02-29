@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>xxxtantacion lox</title>
+</head>
+<body>
+	<style type="text/css">
+		.text {
+			position: absolute;
+			visibility: hidden;
+			font-size: 50px;
+		}
+		#H{
+			top: 200px;
+			left: 100px;
+		}
+		#E{
+			top: 200px;
+			left: 150px;
+		}
+		#L{
+			top: 200px;
+			left: 200px;
+		}
+		#L1{
+			top: 200px;
+			left: 250px;
+		}
+		#O{
+			top: 200px;
+			left: 300px;
+		}
+		#W{
+			top: 200px;
+			left: 400px;
+		}
+		#O1{
+			top: 200px;
+			left: 450px;
+		}
+		#R{
+			top: 200px;
+			left: 500px;
+		}
+		#L2{
+			top: 200px;
+			left: 550px;
+		}
+		#D{
+			top: 200px;
+			left: 600px;
+		}
+		@keyframes H{
+			0% {top: -80px}
+			100% {top: 200px}
+		}
+		@keyframes E{
+			0% {top: -80px}
+			100% {top: 200px}
+		}
+		@keyframes L{
+			0% {top: -80px}
+			100% {top: 200px}
+		}
+		@keyframes L1{
+			0% {top: -80px}
+			100% {top: 200px}
+		}
+		@keyframes O{
+			0% {top: -80px}
+			100% {top: 200px}
+		}
+		@keyframes W{
+			0% {top: -80px}
+			100% {top: 200px}
+		}
+		@keyframes O1{
+			0% {top: -80px}
+			100% {top: 200px}
+		}
+		@keyframes R{
+			0% {top: -80px}
+			100% {top: 200px}
+		}
+		@keyframes L2{
+			0% {top: -80px}
+			100% {top: 200px}
+		}
+		@keyframes D{
+			0% {top: -80px}
+			100% {top: 200px}
+		}
+		body{visibility: hidden;}
+	</style>
+	<script type="text/javascript">
+		window.addEventListener('keydown',s);
+		function s(){
+			if (event.code=="KeyH") {document.getElementById('H').style.visibility='visible';
+			document.getElementById('H').style.animation='H 2s 1'}
+			if (event.code=="KeyE") {document.getElementById('E').style.visibility='visible'
+					document.getElementById('E').style.animation='E 2s 1'}
+			if (event.code=="KeyL") {document.getElementById('L').style.visibility='visible';
+				document.getElementById('L1').style.visibility='visible';
+							document.getElementById('L').style.animation='L 2s 1'
+			document.getElementById('L1').style.animation='L1 2s 1'
+							document.getElementById('L2').style.animation='L2 2s 1'
+								document.getElementById('L2').style.visibility='visible'}
+			if (event.code=="KeyW") {document.getElementById('W').style.visibility='visible';
+					document.getElementById('W').style.animation='W 2s 1'}
+			if (event.code=="KeyO") {document.getElementById('O').style.visibility='visible';
+				document.getElementById('O1').style.visibility='visible'
+							document.getElementById('O').style.animation='O 2s 1'
+									document.getElementById('O1').style.animation='O1 2s 1'}
+			if (event.code=="KeyR") {document.getElementById('R').style.visibility='visible'
+									document.getElementById('R').style.animation='R 2s 1'}
+			if (event.code=="KeyD") {document.getElementById('D').style.visibility='visible'
+											document.getElementById('D').style.animation='D 2s 1'
+		}
+		}
+	</script>
+	<div  class="text" id="H">H</div>
+	<div  class="text" id="E">E</div>
+	<div  class="text" id="L">L</div>
+	<div  class="text" id="L1">L</div>
+	<div  class="text" id="O">O</div>
+	<div  class="text" id="W">W</div>
+	<div  class="text" id="O1">O</div>
+	<div  class="text" id="R">R</div>
+	<div  class="text" id="L2">L</div>
+	<div  class="text" id="D">D</div>
+</body>
+</html>

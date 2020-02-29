@@ -1,0 +1,27 @@
+body{
+	background-color: black;
+}
+b{
+	text-decoration: underline;
+	font-family: Sans;
+}
+#Tixt{
+	position: absolute;
+	left: 300px;
+	background-color: gray;
+	width: 500px;
+	height: 1000px;
+}
+img {
+	float: left;
+	width: 50%;
+}
+#we{
+	float: right;
+}
+#ssssssssss{
+	width: 200px;
+	height: 100px;
+	border-color: blue;
+	position: fixed;
+}

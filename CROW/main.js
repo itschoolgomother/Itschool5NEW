@@ -1,0 +1,1 @@
+box.style.widch=100 px  
