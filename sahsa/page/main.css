@@ -29,5 +29,7 @@ main{
 display: flex;
 }
 .mainL,.mainR{
-width: 50%;
+	width: 50%;
 }
+
+

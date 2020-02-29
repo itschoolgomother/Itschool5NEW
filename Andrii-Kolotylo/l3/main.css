@@ -29,6 +29,7 @@ header{
 	align-self: center;
 	font-size: 40px; 
 	color: #F8F8FF;	
+	font-family: 'Trade Winds';
 }
 menu{
 	align-self: center;
@@ -67,6 +68,21 @@ li > a {
 	text-align: center;
 	color: wheat;
 
+
+}
+
+footer{
+	width:100%;
+	min-height: 100px;
+	background-color: red;
+	margin-top: 90px;
+}
+
+footer > div > p{
+color: ghostwhite;
+text-align: center;
+line-height: 100px;
+}
 
 
 
