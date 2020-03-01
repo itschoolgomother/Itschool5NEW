@@ -1,0 +1,66 @@
+/* all  style */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.con{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    min-height: 150px;
+    background-color: lime;
+    margin-bottom: 50px;
+}
+header > div{
+    display: flex;
+}
+.headerL,.headerR{
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+}
+menu > li{
+    list-style: none;
+    display: inline;
+    margin-left: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Main */
+main{
+    width: 100%;
+    min-height: 500px;
+    background-color: lightblue;
+    display: flex;
+}
+.mainL{
+    width: 50%;
+}
+.mainR{
+    width: 50%;  
+}
+.mainL > img{
+    width: 100%;
+}
+.text{
+    padding: 25px;
+}
+.text > h2{
+    color: ghostwhite;
+    font-size: 40px;
+    text-align: center;
+}
+footer{
+    max-height: 100px;
+    border-color: blue
+    margin-top: 50px;
+}
+footer > p{
+    color: blur;
+    text-align: center;
+    line-height: 100px;
+}
