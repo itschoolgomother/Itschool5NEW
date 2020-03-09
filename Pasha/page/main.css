@@ -1,0 +1,75 @@
+*{
+padding: 0px;
+margin: 0px;
+}
+.con{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	min-height: 100px;
+	background-color: darkgrey;
+	margin-bottom: 50px;
+}
+.head{
+	display: flex;
+	justify-content: center;
+}
+.logo{
+	line-height: 100px;
+}
+main{
+width: 100%;
+background-color: darkgrey;
+min-height: 500px;
+display: flex;
+}
+.mainR,.mainL{
+	width: 50%;
+}
+.mainL > img{
+	width: 100%;
+}
+.text{
+	padding: 15px;
+}
+
+.text > h3{
+font-size: 35px;
+text-align: center;
+color: white;
+}
+.text > p{
+	color: white;
+	margin-top:15px 
+}
+footer{
+	width:100%; 
+	min-height:100px;
+	background-color:darkgrey;
+	margin-top:100px;
+}
+footer > div > p{
+	text-align: center;
+	color: darkgrey;
+	font-size: 22px;
+}	
+.menu-line{
+	width:100%; 
+	min-height:100px;
+	background-color:darkgrey;
+	margin-bottom:50px;
+}
+menu{
+	text-align: center;
+}
+menu > a{
+	color: wheat; 
+	line-height: 100px;
+	margin-left: 50px;
+	font-size: 18px;
+}
+menu > a: first-child{
+margin-left: 0px;
+}

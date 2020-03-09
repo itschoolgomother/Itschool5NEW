@@ -1,0 +1,237 @@
+.panda{
+	width: 175px;
+	height:400px;
+
+position: absolute;
+left:50% ;
+top:50%;
+transform: translate(-50%,-50%);
+}
+.head{
+width: 170px;
+height: 160px;
+background-color: white;
+border-radius: 70% 80% 70% 70%;
+border: 1px black solid;
+box-shadow: inset 17px 0px 3px 0px rgb(85, 85, 85);
+position: absolute;
+left: 8px;
+z-index: 2;
+}
+.body{
+width: 150px;
+height:190PX;
+background-color: white;
+border: 1px black solid;
+border-radius: 90% 90% 70% 70%;
+box-shadow: inset 12px -8px 3px 0px rgb(85, 85, 85);
+position: absolute;
+left: 20px;
+top:150px; 
+}
+.eyel{
+	width: 45px;
+	height:65px;
+	background-color: black;
+	border-radius: 80% 90% 90% 100%;
+	transform: rotate(50deg);
+	position: absolute;
+	left:38px; 
+	top:31px;
+}
+.white{
+	width: 30px;
+	height:30px;
+	background-color:white;
+	border-radius: 50%;
+	position: absolute;
+	left:5px;
+	top: 5px; 
+
+}
+.blue{
+	width: 25px;
+	height:25px;
+	background-color: #318CD2;
+	border-radius: 50%;
+	position: absolute;
+	left: 3px;
+	top: 3px;
+}
+.black{
+	width: 14px;
+	height:14px;
+	background-color:black;
+	border-radius: 50%;
+	position: absolute;
+	left:4px;
+	top:3px; 
+}
+.shine{
+	width: 8px;
+	height:8px
+;	background-color: rgb(251, 254, 231);
+	border-radius: 50%;
+	position: absolute;
+	left: -3px;
+	top: 5px;
+}
+.eyer{
+	width: 45px;
+	height:65px;
+	background-color: black;
+	border-radius: 80% 90% 90% 100%;
+	transform: rotate(-50deg);
+	position: absolute;
+	left:100px; 
+	top:31px;
+}
+.whiteR{
+	transform: rotate(100deg);
+	position: absolute;
+	top: 5px;
+	left:8px;
+}
+.nouse{
+	width: 40px;
+	height:28px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	top: 90px;
+	left: 69px;
+}
+.min-nouse{
+	width:13px;
+	height:10px;
+	background-color:white;
+	border-radius: 50%;
+	position: absolute;
+	top:4px;
+	left: 5px; 
+}
+.mouse{
+	width:16px; 
+	height:12px;
+	background-color:black; 
+	border-radius:100% 100% 60% 60%;
+	position: absolute;
+	top:120px;
+	left: 60px;
+}
+.min-mouse{
+	width:8px; 
+	height:6px;
+	background-color:red; 
+	border-radius:100% 100% 60% 60%;
+	position: absolute;
+	top:4px;
+	left: 4px;
+}
+.earl{
+    width:70px; 
+	height:70px;
+	background-color:black; 
+	border-radius:70% 80% 70% 80%;
+	position: absolute;
+	top:-10px;
+	left: -5px;
+	box-shadow: inset 8px 0px 3px 0px rgb(85, 85, 85);
+}
+.earr{
+	width:70px; 
+	height:70px;
+	background-color:black; 
+	border-radius:70% 80% 70% 80%;
+	position: absolute;
+	top:-11px;
+	left: 100px;
+	box-shadow: inset 8px 0px 3px 0px rgb(85, 85, 85);
+}
+.legl{
+width:50px; 
+	height:80px;
+	background-color:black; 
+	border-radius:40% 50% 40% 50%;
+	position: absolute;
+	top:160px;
+	left: 10px;
+	z-index: -1;
+}
+.legr{
+	width:50px; 
+	height:80px;
+	background-color:black; 
+	border-radius:40% 50% 40% 50%;
+	position: absolute;
+	top:160px;
+	left:93px;
+	z-index: -1;
+}
+.armr{
+width:52px; 
+	height:112px;
+	background-color:black; 
+	border-radius:40% 50% 40% 50%;
+	position: absolute;
+	top:0px;
+	left:96px;
+	transform: rotate(-10deg);
+	z-index: -3;
+	box-shadow:inset 5px -2px 1px 0px;
+	border:3px solid black; 
+}
+.arml{
+width:52px; 
+	height:112px;
+	background-color:black; 
+	border-radius:40% 50% 40% 50%;
+	position: absolute;
+	top:0px;
+	left:-6px;
+	transform: rotate(10deg);
+	z-index: -3;
+	box-shadow:inset 5px -2px 1px 0px;
+	border:3px solid black; 
+}
+body{
+	background-color: red;
+	animation:qcolor 100s infinite ;
+
+}
+@keyframes qcolor {
+0%{background-color: rosybrown;}
+50%{background-color: yellow;}
+100%{background-color: red;}
+
+}
+.sky1,.sky2{
+	width:400px ;
+	height:200px;
+	background-color:lightblue;
+	border-radius:35%;
+position: absolute; 
+}
+.sky1{
+	left:200px; 
+	top:30px;
+	animation: mmove 10s infinite;
+}
+.sky2{
+	left:600px; 
+	top: 30px;
+	animation: q 10s infinite;
+	}
+
+
+ @keyframes mmove {
+ 	0%{left:40px;}
+ 	50%{left:60px;}
+ 	100%{left:40px;}
+ }
+ @keyframes q {
+ 	0%{left:600px;}
+ 	50%{left:620px;}
+ 	100%{left:600px;}
+ }
+

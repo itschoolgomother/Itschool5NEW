@@ -24,9 +24,14 @@ header{
 	align-items: center;
 
 }
-
+.headerL > h2{
+	color: wheat;
+	font-family: 'Trade Winds' ;
+	font-size: 40px;
+	margin-left: 50px;
+}
 menu > a{
-	color: grey;
+	color: white;
 	text-decoration: none;
 	margin-left: 50px;
 }
@@ -35,4 +40,36 @@ main{
 	min-height: 500px;
 	background-color: green;
 	margin-top: 50px;
+	display: flex;
+}
+.mainL{
+	width: 50%;
+}
+.mainR{
+	width: 50%;	
+}
+.mainL > img{
+	width: 100%;
+}
+.text{
+	padding: 25px;
+
+}
+.text > h2{
+	color: red;
+	text-align: center;
+}
+.text > p{
+	color: blue;
+	margin-top: 20px;
+}
+footer{
+	width: 100%;
+	min-height: 100px;
+	background-color: turquoise;
+	margin-top: 70px;
+	color: yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

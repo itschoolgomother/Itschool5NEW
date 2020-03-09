@@ -1,27 +1,22 @@
-body{
-	background-color: black;
+
+#hoglin{
+	margin: auto;
 }
-b{
-	text-decoration: underline;
-	font-family: Sans;
+.header{
+	border: 10px dotted red;
+	width: 75%;
+	height: 350px;
+	margin: auto;
 }
-#Tixt{
-	position: absolute;
-	left: 300px;
-	background-color: gray;
-	width: 500px;
-	height: 1000px;
+.content{
+	border: 10px dotted red;
+	width: 75%;
+	height: 700px;
+	margin: auto;
 }
-img {
-	float: left;
-	width: 50%;
-}
-#we{
-	float: right;
-}
-#ssssssssss{
-	width: 200px;
-	height: 100px;
-	border-color: blue;
-	position: fixed;
+.footer{
+	border: 10px dotted red;
+	width: 75%;
+	height: 350px;
+	margin: auto;
 }

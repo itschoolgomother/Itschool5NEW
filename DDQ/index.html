@@ -4,50 +4,63 @@
 	<title></title>
 </head>
 <body>
-	<script type="text/javascript">
-		window.addEventListener('scroll',ss);
-		function ss(){
-			var x;
-			var y;
-			x = -400+pageYOffset*3;
-			if (x>500) {x=500}
-			document.getElementById('text').style.right=x+'px'
-			
-			y = -200+pageYOffset*3;
-			if (y>500) {y=500}
-			document.getElementById('pic').style.top=y+'px'
-
-			q = -200+pageYOffset*3;
-			if (q>500) {q=500}
-			document.getElementById('but').style.left=q+'px'
-		}
-	</script>
 	<style type="text/css">
-		body{height: 2000px;}
-		#text {
-			right: -400px;
-			position: fixed;
-			top: 300px;
-			width: 300px;
+		.text{
+			position: absolute;
+			font-size: 50px;
+			top: 40%;
+			opacity: 0;
+			
 		}
-		#pic{
-			top: -200px;
-			position: fixed;
-		}
-		#but{
-			left: -400px;
-			position: fixed;
-			top: 400px;
-			width: 100px;
-			height: 100px;
-		}
+		#l1{left: 400px;}
+		#l2{left: 500px}
+		#l3{left: 600px;}
+		#l4{left: 700px;}
+		#l5{left: 800px;}
+		#l6{right: 350px;}
+		@keyframes danya{from{top: -10%;}}
+		@keyframes up{from{top: 110%;}}
+		@keyframes left{from{left: -10%;}}
+		@keyframes right{from{right: 10%;}}
 	</style>
-	<div id="text"><center>rhviii
-	iiiiiiiiiiiiiiiiiiiip4\
-	1tbun6n4bhn42\vbvu 8im8\8h7 964jhy\4iji
-	p64ih-]i5]hp}hih6ikp5]kjp5y
-	kij5J#i7][ik][ik</center></div>
-	<div id="pic"><img src="/home/itschool5/Документы/DDQ/555a6081af322a4ba7496d30bb5b0bdf.jpg" width="1200" height="200"></div>
-	<div id="but"  ><button>yejn</button></div>
+
+	<div class="text" id="l1">N</div>
+	<div class="text" id="l2">I</div>
+	<div class="text" id="l3">G</div>
+	<div class="text" id="l4">G</div>
+	<div class="text" id="l5">E</div>
+	<div class="text" id="l6">R</div>
+	<script type="text/javascript">
+
+		var n = prompt('1/6',n);
+		var i = prompt('2/6',i);
+		var g = prompt('3/6',g);
+		var h = prompt('4/6',h);
+		var e = prompt('5/6',e);
+		var r = prompt('6/6',r);
+
+		window.addEventListener('keydown',ok);
+		function ok(){
+			if (event.code == "Space") {
+				document.getElementById('l1').style.animation = "danya 2s 1"
+				document.getElementById('l1').style.opacity = 1;
+				document.getElementById('l1').innerHTML = n;
+				document.getElementById('l2').style.animation = "up 2s 1"
+				document.getElementById('l2').style.opacity = 1;
+				document.getElementById('l2').innerHTML = i;
+				document.getElementById('l3').style.animation = "left 2s 1"
+				document.getElementById('l3').style.opacity = 1;
+				document.getElementById('l3').innerHTML = g;
+				document.getElementById('l4').style.animation = "danya 2s 1"
+				document.getElementById('l4').style.opacity = 1;
+				document.getElementById('l4').innerHTML = h;
+				document.getElementById('l5').style.animation = "up 2s 1"
+				document.getElementById('l5').style.opacity = 1;
+				document.getElementById('l5').innerHTML = e;
+				document.getElementById('l6').style.animation = "right 2s 1"
+				document.getElementById('l6').style.opacity = 1;
+				document.getElementById('l6').innerHTML = r;
+			}}
+	</script>
 </body>
 </html>
