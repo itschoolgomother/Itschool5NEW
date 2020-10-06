@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+	#player{width:50px;
+height:50px;
+border:1px solid black;
+background-color:yellow;
+border-radius:50px;
+position:absolute;
+}
+</style>
+ 
+
+<button id="player"></button>
+<script type="text/javascript">
+	function win (){
+		alert("ми знали что ви хотите больше")
+	}
+    window.addEventListener("mousemove",f)
+    var rx =0
+    var ry =0
+    var r =0		
+    var x =350;
+    var y = 350;
+    function f(){
+    var mx = event.x;
+    var my = event.x;
+    rx = x*x+50+y*y+50;
+    ry = mx*mx+50+my*my+50;
+    rx =Math.sgrt(rx)
+    ry =Math.sgrt(ry)
+    r=ry-rx;
+    if(r<0){r=-r;}
+    document.getElementById("player").style.left=x+"px"
+    document.getElementById("player").style.top=y+"px"
+    if(r<100){
+    	x=Math.random()*500;
+    	y=Math.random()*500;
+    	  document.getElementById("player").style.background="rgb("+r+",0,0)"  	
+}  
+}
+</script>
+</body>
+</html>
