@@ -1,0 +1,30 @@
+body{
+	background-color:black;
+}
+span{
+	font-size: 300px;
+	color: white;
+	margin-left: 20px;
+	text-shadow: -7px 7px 3px red,
+	-14px 14px 3px purple;
+	text-decoration: line-through;
+}
+.shadows{
+	border: 600px;
+	height: 500px;
+	border: 3px solid white;
+	position: absolute;
+	left: 400px;
+	top: 250px;
+	box-shadow: 10px 10px 10px 10px red,
+	10px 10px 10px 10px lime;
+	border-radius: 5%;
+}
+span + span{
+	text-shadow: 0px 7px 3px pink,
+	0px 14px 3px purple
+}
+span + span + span{
+	text-shadow: 7px 7px 3px pink,
+	14px 14px 3px purple;
+}
