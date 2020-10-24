@@ -1,0 +1,55 @@
+li{
+color:blue ;
+font-size:30px;
+list-style-type:square;
+text-decoration: underline;
+}
+li:hover{
+	list-style-type: square;
+	text-decoration: underline;
+}
+a:active{
+	color: red;
+}
+.box{
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	border: 5px dotted black;
+}
+
+
+body{
+	background-color:  black;
+ /*background-image: :linear-gradient(red,black)
+  background-repeat: no-repeat;*/
+ }
+ table{
+ 	border: 3px solid lightblue;
+ 	border-collapse: collapse;
+ }
+ td{
+ 	border: 3px solid lightblue;
+}
+
+
+.pos{
+	width: 400px;
+	height: 300px;
+	border: 2px solid red;
+	position: absolute;
+	bottom: 30px;
+	right: 500px;
+	box-shadow: -50px 50px 0px 15px red,
+	50px -50px 0px 15px blue,
+	50px -50px 0px 15px green;
+	border-radius:5%;  
+}
+span{
+	font-size:200px;
+	color: red;
+	text-shadow: 5px 5px 2px red,
+	5px 5px 2px blue,
+	10px 5px 2px blue;
+    
+}

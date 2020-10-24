@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>APPLE 100% LEGIT</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var time = 600; 
+		function timek(){
+			var text = document.getElementById('sale');
+			text.innerHTML = "Sale DONE"
+			document.getElementById('but').style.animationName = "l";
+			document.getElementById('but').style.left = "300px";
+			document.getElementById('but').style.top = "600px";
+			document.getElementById('but').style.width = "700px";
+			document.getElementById('but').style.height = "200px";
+		}
+		function timer(){
+			requestAnimationFrame(timer)
+		var timev = document.getElementById('canvas');
+		timev.innerHTML = 'До конца акции осталось: '+time+'сек.'
+time-=1;
+if(time<0){timek();time=0;}
+		}
+		setTimeout(timer,1)
+	</script>
+
+	<center>IPHONE 12XSR<br>Steve Jobs<p>APPLE<br><img src="123.png"><br><h1 id="canvas"></h1><br>
+
+		<a href="https://pikabu.ru/story/opukhol_mozga_moya_istoriya_6139204"><button id="but">BUY</button></a>
+		<marquee id="sale" direction="left
+		" scrollamount="10" style="color:red;font-size: 40px;">SALE -80% off</marquee>
+	</center>
+<style type="text/css">
+	button {position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 30px;
+            height: 10px;
+			animation-name: buy;
+			animation-duration: 10s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite; 
+			}
+			@keyframes buy{
+				0% {color:rgb(255,0,0);left:0px ;top:0px ;transform: rotate(0deg);}
+				25%	{color: rgb(0,255,0);left:1200px ;top:0px ;}
+				50%{color: rgb(0,0,255);left:1200px ;top:800px ;transform: rotate(7800deg);}
+				75%{color: rgb(255,0,0);left:0px ;top:800px ;}
+				100%{color: rgb(0,255,0);left:0px ;top:0px ;transform: rotate(0deg);}
+			}
+</style>
+</body>
+</html>
