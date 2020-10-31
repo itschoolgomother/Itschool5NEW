@@ -25,13 +25,17 @@ function sravnenie(){
  	return false;
  }
 }
-let cashInWallet = 30;
-let amount = 50;
-const price = 40;
-let enoughWallet = cashInWallet >= price;
-let enoughCard = amount >= price ;
-let canBuy = enoughWallet || enoughCard
-console.log(canBuy);
-let isWaterHot = true;
-let makeTea = true;
-let = canMakeTea = isWaterHot  makeTea
+// let cashInWallet = 30;
+// let amount = 50;
+// const price = 40;
+// let enoughWallet = cashInWallet >= price;
+// let enoughCard = amount >= price ;
+// let canBuy = enoughWallet || enoughCard
+// console.log(canBuy);
+// let isWaterHot = true;
+// let makeTea = true;
+// let = canMakeTea = isWaterHot  makeTea
+let sts = "Hello World";
+for (let i = 0; i <= 12; i++){
+	console.log(sts[i]);
+}

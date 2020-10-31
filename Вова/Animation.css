@@ -1,0 +1,31 @@
+h1{
+	animation-name: go;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+@keyframes go{
+	10%{font-size: 100px;}
+	20%{color: red;}
+	30%{text-decoration:underline;}
+	40%{text-shadow: 5px 5px 5px purple;}
+}
+.Animation{
+	width: 400px;
+	height: 300px;
+	border: 10px solid black;
+	animation-name: gogo;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	position: absolute;
+}
+@keyframes gogo{
+	10%{background-color: tomato; border:20px dotted red;}
+	20%{background-color: tomato; border:20px dashed red;}
+	29%{background-color: white;}
+	30%{bottom: 0px;}
+	40%{border-radius: 60px}
+	50%{box-shadow: 411px 0px 0px 0px purple}
+	60%{transform: rotate(-180deg);}
+	70%{display: ;}
+	80%{height: 40px; width:30px;}
+}

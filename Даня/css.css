@@ -1,0 +1,6 @@
+body{
+	background-color: rgb(255, 100, 10);
+	background-image: linear-gradient(to bottom right, green, red);
+	background-repeat: no-repeat;
+	height: 1000px;
+}
