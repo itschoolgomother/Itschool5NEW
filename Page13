@@ -1,0 +1,20 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Page</title>
+</head>
+<body>
+<i><h1 align ="center">Names</h1></i>
+<b><p>Javascriptlol</p></b>
+<ol>
+<li>Maks</li>	
+<li>Alex</li>
+</ol>
+<div>
+<ul>
+<li>Artem</li>	
+<li>Oliver</li>
+</ul>
+</div>
+</body>
+</html>

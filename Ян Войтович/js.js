@@ -35,7 +35,19 @@ function sravnenie(){
 // let isWaterHot = true;
 // let makeTea = true;
 // let = canMakeTea = isWaterHot  makeTea
-let sts = "Hello World";
-for (let i = 0; i <= 12; i++){
-	console.log(sts[i]);
+// let sts = "Hello World";
+// for (let i = 0; i <= 12; i++){
+// 	console.log(sts[i]);
+// }
+function shark(sharkDistanse=100,yourDistanse=6,sharkSpeed=50000,yourSpeed=4,dolphin=3) {
+	let dobleSpeed = yourSpeed*2;
+	if(dolphin){
+		yourSpeed = dobleSpeed;
+	}
+	if(yourDistanse/yourSpeed < sharkDistanse/sharkSpeed){
+	return "alive";
+	}else{
+	return "dead";
 }
+}
+

@@ -1,0 +1,44 @@
+h1{
+	animation-name:gogogo;
+	animation-duration: 10s;
+}
+@keyframes gogogo{
+    10%{color:red;}
+    20%{font-size: 100px;}
+    30%{text-decoration: line-through;color: blue;}
+    40%{text-shadow: 20px 30px 0px black;}
+    50%{top:300px;left: 500px;}
+    60%{transform:rotate(360deg);}
+}
+body{
+animation-name: gogo;
+animation-duration:5s;
+animation-iteration-count: infinite;
+}
+@keyframes gogo{
+10%{background-color: red;}
+20%{background-color: cyan;}
+30%{background-color: blue;}
+40%{background-color: yellow;}
+50%{background-color: purple;}
+60%{background-color: green;}
+
+}
+div{
+animation-name: gogogog;
+animation-duration: 5s;
+position: absolute;
+width: 300px;
+height: 200px;
+border: 2px solid black;
+}
+
+@keyframes gogogog{
+10%{border-radius:50%;}
+20%{background-image:radial-gradient(red,blue);}
+30%{border: 5px dashed white;}
+40%{width: 600px;height: 400px;}
+50%{transform: rotate(1000deg);}
+}
+
+
