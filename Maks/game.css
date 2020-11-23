@@ -1,3 +1,9 @@
+body{
+ background-color:#9CFF33 ;
+ background-image:url(maks.jpeg);
+}
+
+
 .smile{
 
  width:98px;
@@ -10,8 +16,6 @@ position: absolute;
     border:4px solid black;
     border-radius:50px;
     position:absolute;
-
-
     background-color:gold;
 }
 .eye{
@@ -22,7 +26,7 @@ position: absolute;
     position:absolute;
     right:50px;
     bottom:50px;
-    background-color:black;
+    background-color:white;
 }
 .eye + .eye {
 	width:14px;
@@ -32,7 +36,7 @@ position: absolute;
     position:absolute;
     right:20px;
     bottom:50px;
-    background-color:black;
+    background-color:white;
 }
 .mouth{
 	width:14px;
@@ -46,16 +50,31 @@ position: absolute;
 }
 
 .ball{
+
 	width:14px;
     height:14px;
     border:3px solid black;
     border-radius:50px;
     position:absolute;
     left:200px;
-    bottom:50px;
+    top:50px;
     background-color:red;
  background-image:radial-gradient(teal,lightgreen) ;
 }
+.ball1{
+animation-name:go;
+ animation-duration:3s;
+ animation-iteration-count: infinite;
+
+}
+@keyframes go{
+    90%{top:700px;}
+    100%{left: 800px;right:400px; width: 30px; height: 30px;}
+    80%{top:500px;}
+    60%{right:800px;right:400px; width: 30px; height: 30px;}
+
+}
+
 .ball + .ball{
 
 	width:14px;
@@ -64,9 +83,22 @@ position: absolute;
     border-radius:50px;
     position:absolute;
     left:300px;
-    bottom:50px;
+    top:50px;
      background-image:radial-gradient(blue,lightblue) ;
 
+}
+.ball2{
+animation-name:gone;
+ animation-duration:3s;
+ animation-iteration-count: infinite;
+ }
+
+@keyframes gone{
+    
+    40%{right:500px;}
+    30%{top: :100px}
+    10%{left:200px;right:400px; width: 30px; height: 30px;}
+    
 }
 
 .ball + .ball+.ball{
@@ -77,6 +109,73 @@ position: absolute;
     border-radius:50px;
     position:absolute;
     left:400px;
-    bottom:50px;
+    top:50px;
     background-image:radial-gradient(red,lightgreen) ;
 }
+.ball3{
+animation-name:went;
+ animation-duration:3s;
+ animation-iteration-count: infinite;
+}
+@keyframes went{
+
+    20%{left: 500px; width: 30px; height: 30px;}
+       50%{top: 600px;}
+    40%{right:400px; width: 30px; height: 30px;}
+}
+.glass{
+   width:14px;
+    height:14px;
+    border-top:3px solid black;
+    position:absolute;
+    right:40px;
+    bottom:50px;
+    border-radius: 50%;
+    width:10px; 
+}
+.brow{
+   width:14px;
+    height:14px;
+    border-top:3px solid black;
+    position:absolute;
+    right:50px;
+    bottom:60px;
+    border-radius: 50%;
+    width:25px; 
+}
+.brow+.brow{
+   width:14px;
+    height:14px;
+    border-top:3px solid black;
+    position:absolute;
+    right:18px;
+    bottom:60px;
+    border-radius: 50%;
+    width:25px; 
+}
+.point{
+    width:1px;
+    height:1px;
+    border:3px solid black;
+    border-radius:50px;
+    position:absolute;
+    left:190px;
+    bottom:50px;
+    background-color:black;
+    bottom:55px;
+   left:35px;
+}
+
+.point+.point{
+    width:1px;
+    height:1px;
+    border:3px solid black;
+    border-radius:50px;
+    position:absolute;
+    left:200px;
+    bottom:50px;
+    background-color:black;
+    bottom:55px;
+   left:65px;
+}
+
