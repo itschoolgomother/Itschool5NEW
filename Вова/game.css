@@ -1,25 +1,81 @@
 .hero{
-	width:200px;
-	height:200px;
-	border:1px solid black;
-	position: absolute;   
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	background-color: #00FF00;
+	animation: hero 300s infinite linear;
 }
-.head{
-	border-radius:50%;
+@keyframes hero{
+from{left:0px;}
+to{left:1395px;}
+}
+.rotik{
+	width: 200px;
+	height: 20px;
+	background-color: black;
+	position: absolute;
+	top:130px;
+}
+.glazik{
+	width:100px;
+	height:100px;
+	border-radius:50px;
+	background-color: black;
+	position: absolute;
+}
+.glazik2{
+	width:100px;
+	height:100px;
+	border-radius:50px;
+	background-color: black;
+	position: absolute;
+	left:100px;
+}
+.bitcoin{
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 50px;
 	width:50px;
 	height:50px;
-	background-color:red;
-	border:2px solid black; 
-	position:absolute;
-	left: 75px; 
+	background-color: gold;
+	top:250px;
 }
-.hand{
-	border-radius:50%;
-	width:50px;
-	height:50px;
-	background-color:blue;
-	border:2px solid black; 
-	position:absolute;
-	left: 50px; 
+.D{
+	position: absolute;
+	border-bottom: 10px solid darkgoldenrod;
+	border-radius: 50%;
+	width:25px;
+	height:25px;
+	transform: rotate(270deg);
+	top:250px;
+	left:15px;
 }
-Teeworlds скачать
+.D1{
+	position: absolute;
+	border-bottom: 10px solid darkgoldenrod;
+	border-radius: 50%;
+	width:25px;
+	height:25px;
+	transform: rotate(270deg);
+	top:270px;
+	left:15px;
+}
+.cloud{
+	position: absolute;
+	border: 10px solid gray;
+	border-radius: 50%;
+	width:300px;
+	height:300px;
+	top:350px;
+	left:20px;
+	background-color: gray;
+	animation: cloud 2s infinite linear;
+}
+@keyframes cloud{
+	from{left:0px;}
+	to{left:1395px;}
+}
+html{
+	background-color:#341fe4;
+}
