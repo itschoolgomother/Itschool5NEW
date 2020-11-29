@@ -11,30 +11,46 @@
 let ctx = cnv.getContext("2d");
 let x = cnv.width/2;
 let y = cnv.height/2;
+let r = 50;
+let rGrow = 1
 
-ctx.beginPath();
-ctx.rect(0,0,600,400);
-ctx.fillStyle = "teal";
-ctx.fill();
-ctx.closePath();
 
 
 function draw() {
+	
+	
 	ctx.beginPath();
-ctx.arc(x,y,100, 0,Math.PI*2,false);
+	ctx.clearRect(0,0,cnv.width, cnv.height);
+ctx.arc(x,y,r, 0,Math.PI*2,false);
 ctx.fillStyle = "green";
 ctx.fill();
 ctx.strokeStyle = "black";
 ctx.stroke()
-ctx.strokeWith = "40px";
 ctx.closePath();
-x+=2
-y+=2
-if(y +100 == cnv.height){
-	y= y-=2
+r += rGrow
+	if(r == 200){
+		rGrow =-rGrow
+//x+=2
+//y+=2
+//if(y +100 == cnv.height){
+//	y= y-=2
+//}
+}else if (r <= 0){
+	rGrow =- rGrow
+
 }
 }
 setInterval(draw,10)
+function DBR(){
+	ctx.beginPath();
+	ctx.rect(100,100,300,300)
+	ctx.fillStyle ="green";
+	ctx.fill();
+	ctx.(45*Math.PI/180)
+	ctx.closePath()
+
+}
+setInterval(DBR,10)
 
 	</script>
 	 <style type="text/css">
