@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
+	
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="game.css">
 </head>
 <body>
-	<div class="smile">
+	<div class="smile" id="hero">
 		<div class="head"></div>
 			<div class="eye"></div>
 			<div class="eye"></div>
@@ -16,8 +18,41 @@
 			<div class="point"></div>
 			<div class="point"></div>
 	</div>
-<div class="ball ball1"></div>
-<div class="ball ball2"></div>
-<div class="ball ball3"></div>
+<div class="ball ball1" id="coin"></div>
+<div class="ball ball2" id="moneta"></div>
+<div class="ball ball3" id="kopijka"></div>
+<script type="text/javascript">
+    let  hero = document.getElementById('hero');
+    let x = 10;
+    let y = 10;
+document.addEventListener("keydown",move);
+
+function move(e){
+if(e.keyCode == 37){
+	x = x  - 50;
+	hero.style.left = x + "px";
+		
+	}
+	if(e.keyCode == 39){
+	x = x  + 50;
+	hero.style.left = x + "px";
+		
+}
+	if(e.keyCode == 38){
+	y = y  - 50;
+	hero.style.top = y + "px";
+		
+}
+	if(e.keyCode == 40){
+	y = y  + 50;
+	hero.style.top = y + "px";
+		
+}
+}
+if(hero.style.top+hero.style.height >=
+	coin.style.top){
+coin.style.display="none";
+}
+    </script>
 </body>
 </html>
