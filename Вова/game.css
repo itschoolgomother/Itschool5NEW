@@ -4,12 +4,12 @@
 	height: 200px;
 	border: 1px solid black;
 	background-color: #00FF00;
-	animation: hero 300s infinite linear;
+	animation: hero 60s infinite linear;
 }
-@keyframes hero{
+/*@keyframes hero{
 from{left:0px;}
 to{left:1395px;}
-}
+}*/
 .rotik{
 	width: 200px;
 	height: 20px;
@@ -63,13 +63,13 @@ to{left:1395px;}
 }
 .cloud{
 	position: absolute;
-	border: 10px solid gray;
+	border: 10px solid yellow;
 	border-radius: 50%;
 	width:300px;
 	height:300px;
 	top:350px;
 	left:20px;
-	background-color: gray;
+	background-color: yellow;
 	animation: cloud 2s infinite linear;
 }
 @keyframes cloud{
@@ -77,5 +77,5 @@ to{left:1395px;}
 	to{left:1395px;}
 }
 html{
-	background-color:#341fe4;
+	background-color:#000000ed;
 }

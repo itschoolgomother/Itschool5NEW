@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<div class="hero">
+<div class="hero" id="hero">
 	<div class="rotik"></div>
 	<div class="glazik"></div>
 	<div class="glazik2"></div>
@@ -19,5 +19,20 @@
 <div>
 <div class="cloud"></div>
 </div>
+<script type="text/javascript">
+	let a = 4;
+	let b = 3;
+	let x = 30
+	let hero = document.getElementById("hero");
+	if (a > b) {
+	console.log(a + b)
+    }
+    document.addEventListener("keydown", svarshik)
+function svarshik(e) {
+	if (e.keyCode == 83) {
+		hero.style.top = x + "px";
+	}
+}
+</script>
 </body>
 </html>
