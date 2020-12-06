@@ -16,38 +16,62 @@ let rGrow = 1
 
 
 
-function draw() {
+// function draw() {
 	
 	
-	ctx.beginPath();
-	ctx.clearRect(0,0,cnv.width, cnv.height);
-ctx.arc(x,y,r, 0,Math.PI*2,false);
-ctx.fillStyle = "green";
-ctx.fill();
-ctx.strokeStyle = "black";
-ctx.stroke()
-ctx.closePath();
-r += rGrow
-	if(r == 200){
-		rGrow =-rGrow
-//x+=2
-//y+=2
-//if(y +100 == cnv.height){
-//	y= y-=2
-//}
-}else if (r <= 0){
-	rGrow =- rGrow
+// 	ctx.beginPath();
+// 	ctx.clearRect(0,0,cnv.width, cnv.height);
+// ctx.arc(x,y,r, 0,Math.PI*2,false);
+// ctx.fillStyle = "green";
+// ctx.fill();
+// ctx.strokeStyle = "black";
+// ctx.stroke()
+// ctx.closePath();
+// r += rGrow
+// 	if(r == 200){
+// 		rGrow =-rGrow
+// //x+=2
+// //y+=2
+// //if(y +100 == cnv.height){
+// //	y= y-=2
+// //}
+// }else if (r <= 0){
+// 	rGrow =- rGrow
 
-}
-}
-setInterval(draw,10)
+// }
+// }
+// setInterval(draw,10)
+let x1 = 100;
+	let y1 = 100;
+	let dx = 1;
 function DBR(){
-	ctx.beginPath();
-	ctx.rect(100,100,300,300)
-	ctx.fillStyle ="green";
-	ctx.fill();
-	ctx.(45*Math.PI/180)
-	ctx.closePath()
+
+	// ctx.beginPath();
+	// ctx.rect(100,100,300,300)
+	// ctx.fillStyle ="green";
+	// ctx.fill();
+	// ctx.(45*Math.PI/180)
+	// ctx.closePath()
+ctx.beginPath();
+
+ctx.clearRect(0,0,cnv.width, cnv.height);
+ctx.font = "48px serif";
+ctx.fillText("тобi бан",100, 100);
+ctx.arc(x1,y1,30,0,Math.PI*2,false);
+ctx.fillStyle = "red";
+ctx.fill();
+ctx.closePath();
+x1+=dx;
+y1+=d
+if(x1 + 30 >= cnv.width || x1 - 30 <= 0){
+	dx =- dx;
+}
+	if(y1 +30 >= cnv.height || y1 - 30 <= 0){
+		dx =- dx
+	}
+
+
+
 
 }
 setInterval(DBR,10)
