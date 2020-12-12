@@ -1,0 +1,16 @@
+body{
+	background-image: linear-gradient(to left, red,blue,purple,pink,tomato,orange,green,black,white,yellow,grey);
+}
+input[type="text"]:hover{
+	cursor: progress;
+}
+input[type="text"]:active{
+	background-color: red;
+	cursor: no-drop;
+}
+div{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	margin: 0px auto;
+}

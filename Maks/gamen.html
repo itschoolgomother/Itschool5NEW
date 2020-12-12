@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<canvas width="600" height="500" id ="mycanvas">
+	 </canvas>
+	<style type="text/css">
+		canvas{
+			border:1px solid black;
+	</style>
+	<script type="text/javascript">
+		let cvs = document.getElementById('mycanvas')
+		let ctx = cvs.getContext('2d');
+        let x = 300;
+        let dx = 5;
+        x+=dx;
+	function draw (){
+    ctx.beginPath();
+    ctx.clearRect(0, 0, 600, 500);
+    ctx.arc(x, 250, 50, 0,Math.PI*2, true);
+    ctx.fillStyle = "darkviolet";
+    ctx.fill();
+    ctx.closePath();
+    x = x + dx;
+    if(x>=550){
+    	dx*=(-1);
+    }
+	}
+	setInterval(draw,100);
+	</script>
+</body>
+</html>
