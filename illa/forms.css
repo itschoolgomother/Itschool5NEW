@@ -1,0 +1,11 @@
+body  {
+	cursor: url(cursor.cur) 0 0, pointer;
+	min-height:100vh; 
+}
+  div{
+      width: 30px;
+      height: 30px;
+      background-color: red;
+      margin: 0px auto;
+
+  }

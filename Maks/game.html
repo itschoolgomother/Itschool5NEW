@@ -23,10 +23,40 @@
 <div class="ball ball3" id="kopijka"></div>
 <script type="text/javascript">
     let  hero = document.getElementById('hero');
+    let coin = document.getElementById('coin');
+
     let x = 10;
     let y = 10;
-document.addEventListener("keydown",move);
+    let mon =document.getElementById('kopijka');
 
+     let  moneta = document.getElementById('moneta');;
+    let intersection = function(h,c) {
+    	return h.top+h.height >= c.top && 
+    	 c.top+c.height>=h.top &&
+    	 h.left+h.width>=c.left &&
+    	  c.left+c.width>=c.left 
+
+	}
+document.addEventListener("keydown",move);
+ let loop = function() {
+    let box=hero.getBoundingClientRect();
+    let box1 = coin.getBoundingClientRect();
+    let box2 = moneta.getBoundingClientRect();
+    let box3=mon.getBoundingClientRect();
+    if(intersection (box,box1)){
+    	// box1.display="none";
+    	// alert('hello')
+    	coin.style.display = "none";
+    }
+     if(intersection (box,box2)){
+    	moneta.style.display = "none";
+    }
+     if(intersection (box,box3)){
+    	mon.style.display = "none";
+    }
+    requestAnimationFrame(loop);
+ }
+     requestAnimationFrame(loop);
 function move(e){
 if(e.keyCode == 37){
 	x = x  - 50;
@@ -48,10 +78,6 @@ if(e.keyCode == 37){
 	hero.style.top = y + "px";
 		
 }
-}
-if(hero.style.top+hero.style.height >=
-	coin.style.top){
-coin.style.display="none";
 }
     </script>
 </body>

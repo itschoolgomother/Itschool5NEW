@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<canvas width="500" height="500" id="myCanvas"></canvas>
+<script type="text/javascript">
+
+	let cnv = document.getElementById('myCanvas')
+	let ctx = cnv.getContext('2d')
+	let ingradient = ctx.createLinearGradient(20,0,220,0);
+	ingradient.addColorStop(0,"green")
+	ingradient.addColorStop(0.4,"teal")
+	ingradient.addColorStop(0.7,"red")
+	ingradient.addColorStop(1,"blue")
+	ctx.beginPath();
+	ctx.lineCap = "round";
+	ctx.lineJoin = "round";
+	ctx.setLineDash([50])
+	ctx.moveTo(0,500);
+	ctx.lineTo(95,25);
+	ctx.lineTo(250,200);
+	ctx.lineTo(405,25);
+	ctx.lineTo(500,500);
+	ctx.lineWidth = 60;
+	ctx.strokeStyle = ingradient
+	ctx.stroke();
+	ctx.closePath();
+</script>
+<style type="text/css">
+	canvas{
+		border: 1px solid black;
+	}
+</style>
+</body>
+</html>
